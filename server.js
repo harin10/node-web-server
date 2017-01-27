@@ -51,6 +51,13 @@ app.get('/about' , (req,res) => {
   });
 });
 
+app.get('/projects', (req,res) => {
+  res.render('projects.hbs',{
+    PageHeader: 'Go Back Dude',
+    PageTitle: 'Projects page'    
+  })
+});
+
 app.listen(port, () => {
   console.log(`running on ${port}`);
 });
